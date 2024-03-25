@@ -15,4 +15,10 @@ public class HelloController {
     return "hello";
   }
 
+  @GetMapping("hello-mvc")
+  public String helloMvc(@RequestParam(value = "name") String name, Model model) {
+    model.addAttribute("name", name);
+    return "hello-template";
+  }
+
 }
