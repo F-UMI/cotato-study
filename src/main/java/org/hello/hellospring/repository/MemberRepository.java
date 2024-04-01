@@ -9,5 +9,5 @@ public interface MemberRepository {
   Member save(Member member);
   Optional<Member> findByID(Long id);
   Optional<Member> findByName(String name);
-  List<Member> findByAll();
+  List<Member> findAll();
 }
