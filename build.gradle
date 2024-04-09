@@ -28,6 +28,11 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     compileOnly("org.springframework.boot:spring-boot-devtools")
+
+    // 순수 JDBC용 라이브러리 추가
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    runtimeOnly 'com.h2database:h2'
+
 }
 
 tasks.named('test') {
