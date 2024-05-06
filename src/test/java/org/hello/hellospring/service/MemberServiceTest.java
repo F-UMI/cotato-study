@@ -8,6 +8,7 @@ import org.hello.hellospring.repository.MemoryMemberRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.test.annotation.Commit;
 
 class MemberServiceTest {
 
@@ -31,6 +32,8 @@ class MemberServiceTest {
 
 
   @Test
+  @Commit
+    // 실제 DB에 값을 삽입
   void 회원가입() {
     //given
     Member member = new Member();
